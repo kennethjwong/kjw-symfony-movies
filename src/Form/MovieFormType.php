@@ -23,6 +23,7 @@ class MovieFormType extends AbstractType
 
                 ),
                 'label' => false,
+                'required' => false,
             ])
             ->add('releaseYear', IntegerType::class, [
                 'attr' => array(
@@ -31,6 +32,7 @@ class MovieFormType extends AbstractType
 
                 ),
                 'label' => false,
+                'required' => false,
             ])
             ->add('description', TextareaType::class, [
                 'attr' => array(
@@ -39,6 +41,7 @@ class MovieFormType extends AbstractType
 
                 ),
                 'label' => false,
+                'required' => false,
             ])
             ->add('imagePath', FileType::class, array(
                 'required' => false,
